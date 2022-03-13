@@ -1,0 +1,79 @@
+.owl-main{
+    position: relative;
+}
+.owl-prev {
+    position: absolute;
+    bottom: 96px;
+    left: 27px;
+    background-color: transparent !important;
+}
+.owl-next {
+    position: absolute;
+    bottom: 97px;
+    right: 63px;
+    background-color: transparent !important;
+}
+.Banner-Nv .owl-nav .owl-prev span,.Banner-Nv .owl-nav .owl-next span {
+    font-size: 115px;
+    color: white;
+    font-weight: 100;
+    opacity:0;
+}
+.owl-stage{
+    transition: all 1.6s ease 0s !important;
+}
+.owl-main:hover .owl-prev span{
+    opacity:1;
+    transition: 0.6s;
+}
+.owl-main:hover .owl-next span{
+    opacity:1;
+    transition: 0.6s;
+ }
+ /*---------- Media Query 1200px -------- */
+
+ @media screen and (max-width:1200px){
+ .owl-prev {
+    position: absolute;
+    bottom: 43px;
+    left: 27px;
+    background-color: transparent !important;
+ }
+ .owl-next {
+    position: absolute;
+    bottom: 47px;
+    right: 63px;
+    background-color: transparent !important;
+}
+.Banner-Nv .owl-nav .owl-prev span,.Banner-Nv .owl-nav .owl-next span  {
+    font-size: 96px;
+}
+}
+
+  /*---------- Media Query 991px -------- */
+ @media screen and (max-width:991px){
+    .owl-prev {
+        bottom: 34px;
+        left: 27px;
+    }
+    .Banner-Nv .owl-nav .owl-prev span,.Banner-Nv .owl-nav .owl-next span  {
+        font-size: 76px;
+        color: white;
+        font-weight: 100;
+        opacity: 0;
+    }
+    .owl-next {
+        position: absolute;
+        bottom: 38px;
+        right: 49px;
+        background-color: transparent !important;
+    }
+    
+ }
+   /*---------- Media Query 991px -------- */
+   @media screen and (max-width:767px){
+    .owl-prev,.owl-next {
+       display: none !important;
+    }
+   }
+

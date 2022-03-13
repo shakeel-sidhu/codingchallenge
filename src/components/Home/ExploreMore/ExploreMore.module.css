@@ -1,0 +1,66 @@
+
+.ExploreMov{
+    display: flex;
+    justify-content:center;
+}
+.ExploreMov span{
+    margin: 75px 0 50px;
+}
+.ExploreMov span a{
+    text-decoration: none;
+    background-color: #ff9059;
+    padding: 12px 56px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.ExploreMov span a:hover{
+    background: transparent;
+    border: 1px solid #ff9059;
+    transition: 0.4s;
+}
+
+
+/* ------------- 1200px ------------------ */
+
+@media only screen and (max-width: 1200px) {
+    .ExploreMov span {
+        margin: 65px 0 40px;
+    }
+    .ExploreMov span a {
+        padding: 10px 51px;
+        font-size: 21px;
+    }
+    
+    
+}
+
+/* ------------- 991px ------------------ */
+
+@media only screen and (max-width: 991px) {
+    .ExploreMov span {
+        margin: 54px 0 27px;
+    }
+    .ExploreMov span a {
+        padding: 7px 39px;
+        font-size: 17px;
+    }
+    
+    
+}
+
+/* ------------- 767px ------------------ */
+
+@media only screen and (max-width: 767px) {
+    .ExploreMov span {
+        margin: 29px 0 13px;
+    }
+    .ExploreMov span a {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+    
+    
+}

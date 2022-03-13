@@ -1,0 +1,312 @@
+.HeaderText{
+  position: sticky;
+  background-color: rgba(7,7,7,.8);
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.HeaderMain{
+  padding: 15px 0;
+}
+.head-nav-contact a{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.head-nav-contact-1 a{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.nav-link a{
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #a6a6a6;
+    padding-right: 1.5rem !important;
+    letter-spacing: 3px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+.nav-link a:hover{
+    color: #fff !important;
+    transition: 0.4s !important;
+}
+.nav-link a:hover::after{
+    content: " ";
+    width: 31%;
+    bottom: -10px;
+    left: 28%;
+    height: 2px;
+    background-color: #ff9059;
+    position: absolute;
+    transition: 0.4s !important;
+}
+/* .nav-link a:hover .nav-link a span{
+
+} */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.NavMain{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF !important;
+    width: 63%;
+    margin: 0 auto;
+}
+.HeaderContainer{
+     max-width: 1440px !important;
+     padding: 0 0 !important;
+}
+.HeadBtn{
+  display: flex;
+}
+
+.head-nav-contact a ,.head-nav-contact-1 a {
+    margin: auto;
+    color: #f1f1f1;
+    position: relative;
+    border: 0px solid transparent;
+    font-weight: 400;
+    padding: 10px 13px;
+  }
+  .head-nav-contact a:hover{
+    transition: 0.4s !important;
+    color: #f1f1f1 !important;
+    background-color: #525563;
+    border-radius: 30px;
+    padding: 10px 13px;
+  }
+  .head-nav-contact-1 a:hover{
+    transition: 0.4s !important;
+    color: #f1f1f1 !important;
+    background-color: #525563;
+    border-radius: 30px;
+    padding: 10px 13px;
+  }
+  .head-nav-contact-1 a{
+    padding: 10px 13px !important;
+  }
+  .head-nav-contact a:focus{
+    color: #fff !important;
+  }
+  .head-nav-contact-1 a:focus{
+    color: #fff !important;
+  }
+  .head-nav-contact a{
+    padding: 10px 13px !important;
+  }
+  .head-nav-contact-1{
+    margin: 0px 22px 0px 0px;
+
+  }
+  .navbrand{
+      width: 22%;
+  }
+  .navbrand a img{
+    padding: 0;
+    max-width: 222px;
+  }
+  .navbrand a{
+    padding: 0;
+  
+  }
+  .nav-link a:focus{
+    color: #fff !important;
+  }
+
+
+/* ------------- Responsive ------------------ */
+
+
+/* ------------- 1200px ------------------ */
+
+@media only screen and (max-width: 1200px) {
+  .HeaderMain{
+    padding: 13px 0;
+}
+  .navbrand a img{
+    width: 170px;
+  }
+  .nav-link a {
+    font-size: 23px;
+    padding-right: 11px !important;
+}
+.HeadBtn{
+  display: flex;
+  width: 26%;
+}
+.NavMain {
+  width: 55%;
+}
+.head-nav-contact a,.head-nav-contact-1 a {
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+color: #FFFFFF;
+padding: 9px 0px 8px 0px;
+}
+.nav-link a:focus{
+  color: #fff !important;
+}
+.head-nav-contact-1{
+  margin: 0px 9px 0px 0px;
+  width: 44%;
+}
+.head-nav-contact{
+  margin: 0px 9px 0px 0px;
+  width: 44%;
+}
+}
+
+/* ------------- 991px ------------------ */
+
+@media only screen and (max-width: 991px) {
+
+  .NavMain {
+    width: 60%;
+    text-align: center;
+   }
+   .HeaderMain {
+    padding: 9px 0;
+}
+   .nav-link{
+     display: flex;
+     justify-content: center;
+   }
+   .HeadBtn{
+    display: flex;
+  }
+   .nav-link a {
+    font-size: 16px;
+    line-height: 16px;
+}
+.head-nav-contact a, .head-nav-contact-1 a {
+  font-size: 11px;
+  line-height: 20px;
+  max-width: 140px;
+  text-align: center;
+  border-radius: 4px;
+}
+.head-nav-contact-1{
+  margin: 0px 11px 0px 0px;
+  width: 33%;
+}
+.head-nav-contact-1 {
+  margin: 6px auto 0px;
+}
+.head-nav-contact-1 a:hover {
+  border-radius: 4px;
+  padding: 10px 13px;
+}
+.NavbarColapse {
+  background-color: #403434;
+  padding: 28px 0 10px 0;
+  margin: 15px 0 0 0;
+}
+.head-nav-contact a:hover {
+  border-radius: 4px;
+  padding: 10px 13px;
+}
+.head-nav-contact a {
+  margin: 6px auto 0px;
+}
+.nav-link a {
+  font-size: 15px;
+  line-height: 11px;
+  padding-right: unset !important;
+  padding: 11px 0;
+  font-weight: 500;
+}
+.nav-link a:hover::after {
+  width: 41%;
+  bottom: -2px;
+  left: 28%;
+  height: 2px;
+}
+.nav-link a:focus{
+  color: #fff !important;
+}
+.HeadBtn{
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 9px auto 0;
+  height: 48px;
+}
+
+ .head-nav-contact-1 a {
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 86px;
+  text-align: center;
+}
+.navbrand a img{
+  width: 183px;
+}
+.head-nav-contact a {
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 80px;
+  text-align: center;
+}
+/* .NavbarColapse{
+  display: none;
+}
+.Mobilenavdata{
+  display: block;
+} */
+}
+  
+
+/* ------------- 767x ------------------ */
+
+@media only screen and (max-width: 767px) {
+  .navbrand a img {
+    width: 140px;
+}
+.nav-link a {
+  font-size: 15px;
+  line-height: 11px;
+  padding-right: unset !important;
+  padding: 11px 0;
+  font-weight: 500;
+}
+.HeaderMain{
+  padding: 4px 0;
+}
+.head-nav-contact-1 a:hover {
+  padding: 8px 12px;
+  border-radius: 5px;
+
+}
+.head-nav-contact-1,.head-nav-contact{
+  width: 38%;
+}
+.head-nav-contact a:hover{
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.NavbarColapse{
+  background-color: #403434;
+  padding: 28px 0 10px 0;
+  margin: 15px 0 0 0;
+
+}
+.nav-link{
+  display: flex;
+  justify-content: center;
+  padding: 0px 12px;
+}
+.HeadBtn{
+  width: 182px;
+  display: flex;
+  margin: 12px auto 0;
+  height: 37px;
+
+}
+}

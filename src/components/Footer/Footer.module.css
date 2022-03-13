@@ -1,0 +1,173 @@
+.FootMenu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    max-width: 871px;
+}
+.FootMenu ul li a{
+    font-size: 20px;
+    color: #fff;
+    transition: color .2s linear;
+    text-decoration: none;
+    font-weight: 300;
+}
+.FootMenu ul li a:hover{
+    color: #515151;
+}
+.footIcon :hover{
+    opacity: 0.6;
+    transition: 0.4s;
+}
+.liAF::after{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 18px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 14px;
+    top: 3px;
+}
+.CopyRight p{
+    color: #666;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    font-weight: 300;
+}
+.FooterLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 525px;
+    margin:34px 0 0 0 ;
+}
+.footIcon a svg{
+    font-size: 33px;
+    color: #fff;
+    font-weight: 400;
+}
+.footIcon{
+    width: 7%;
+}
+.footImg a img{
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.footImg{
+    width: 26%;
+}
+.FooterMain{
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    margin: 30px 0 0 0;  
+}
+.footImg a img:hover{
+    opacity: .6;
+    border: 1px solid #515151;
+    transition: 0.4s;
+}
+
+/* ----------Media Query 1200px--------  */
+
+@media screen and (max-width: 1200px) {
+    .FootMenu ul li a {
+        font-size: 16px;
+    }
+    .liAF::after {
+        height: 16px;
+        margin: 0 10px;
+    }
+    .CopyRight p {
+        font-size: 17px;
+        margin: 18px 0 0 0;
+    }
+    .FooterLinks{
+        max-width: 461px;
+        margin: 31px 0 0 0;
+    }
+    .footIcon a svg {
+        font-size: 30px;
+    }
+    .footImg a img {
+        max-width: 110px;
+    }
+    .footImg {
+        width: 26%;
+        text-align: center;
+    }
+  }
+
+  /* ----------Media Query 991px--------  */
+
+@media screen and (max-width:991px) {
+    .FootMenu ul li a {
+        font-size: 15px;
+    }
+    .liAF::after {
+        height: 15px;
+        margin: 0 7px;
+    }
+    .CopyRight p {
+        font-size: 16px;
+        margin: 17px 0 0 0;
+    }
+    .FooterLinks {
+        max-width: 433px;
+        margin: 25px 0 0 0;
+    }
+    .footIcon{
+        width: 6%;
+    }
+    .footIcon a svg {
+        font-size: 25px;
+    }
+    .footImg a img {
+        max-width: 106px;
+    }
+    
+    
+}
+
+  /* ----------Media Query 767px--------  */
+
+  @media screen and (max-width:767px) {
+    .FootMenu ul{
+        flex-wrap: wrap;
+    }
+    .FootMenu ul li{
+        margin: 4px 0 0 0;
+    }
+    .FooterMain{
+        padding: 14px 0 20px;
+        margin: 30px 0 0 0;
+    }
+    .FootMenu ul li a {
+        font-size: 14px;
+    }
+    .CopyRight p {
+        font-size: 16px;
+        margin: 12px 0 0 0;
+    }
+    .FooterLinks{
+        max-width: 433px;
+        margin: 17px 0 0 0;
+    }
+    .FooterLinks{
+        max-width: 433px;
+        margin: 17px 0 0 0;
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+    .footIcon{
+        width: 18%;
+    }
+  
+    .footImg{
+        width: 34%;
+        text-align: unset;
+        margin: 9px 0 0 0;
+    }
+    .footImg a img {
+        max-width: 100px;
+    }
+  }
