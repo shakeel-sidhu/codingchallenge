@@ -1,12 +1,12 @@
 
 import React from 'react';
 import './BannerCard.css';
-import { NewOwl } from '../../NewOwl/NewOwl';
+import '../../../assests/css/all.mov.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import BannerCardOwl from './BannerCardOwl.js/BannerCardOwl';
 
 const BannerCard = () => {
-
      const responsive= {
             0: {
                 items: 1
@@ -18,7 +18,6 @@ const BannerCard = () => {
                 items: 1.7
             }
         }
-    
 
     const [Banner, setBannner] = useState([]);
  
@@ -38,7 +37,8 @@ const BannerCard = () => {
     return (
         <>
             <div>
-               {Banner.length!==0 && <NewOwl Banner={Banner} items="2" responsive={responsive} className='owl-theme Banner-Nv'/>}
+           
+               {Banner.length!==0 && <BannerCardOwl Banner={Banner} items="2" responsive={responsive} className='owl-theme Banner-Nv'/>}
             </div>
         </>
     )

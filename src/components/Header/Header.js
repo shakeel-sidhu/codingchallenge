@@ -5,7 +5,6 @@ import headLogo from '../../assests/images/logo.png'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Card from '../../UI/Card/Card'
-// import HeaderLogoSvg from './HeaderLogoSvg';
 
 const Header = () => {
     return (
@@ -32,31 +31,31 @@ const Header = () => {
                                     <Nav className="me-auto">
 
                                         <div className={styles['nav-link']}>
-                                            <LinkContainer to="/movies">
+                                            <LinkContainer to="/">
                                                 <Nav.Link>Movies</Nav.Link>
 
                                             </LinkContainer>
                                         </div>
                                         <div className={styles['nav-link']}>
-                                            <LinkContainer to="/tvshows">
+                                            <LinkContainer to="/">
                                                 <Nav.Link>TV Shows</Nav.Link>
                                             </LinkContainer>
                                         </div>
                                         <div className={styles['nav-link']}>
-                                            <LinkContainer to="/urdu">
+                                            <LinkContainer to="/">
                                                 <Nav.Link>Urdu</Nav.Link>
 
                                             </LinkContainer>
                                         </div>
                                         
                                             <div className={styles['nav-link']}>
-                                                <LinkContainer to="/yuppflix">
+                                                <LinkContainer to="/">
                                                     <Nav.Link href="">YUPPFLIX</Nav.Link>
 
                                                 </LinkContainer>
                                             </div>
                                             <div className={styles['nav-link']}>
-                                                <LinkContainer to="/kids">
+                                                <LinkContainer to="/">
                                                     <Nav.Link>Kids</Nav.Link>
 
                                                 </LinkContainer>
@@ -68,14 +67,14 @@ const Header = () => {
                                     </Nav>
                                     <div className={styles.HeadBtn}>
                                     <div className={styles['head-nav-contact-1']}>
-                                    <LinkContainer to="/login">
+                                    <LinkContainer to="/">
                                         <Nav.Link>
                                             Log in
                                         </Nav.Link>
                                         </LinkContainer>
                                     </div>
                                     <div className={styles['head-nav-contact']}>
-                                    <LinkContainer to="/signup">
+                                    <LinkContainer to="/">
                                         <Nav.Link>
                                             Sign up
                                         </Nav.Link>

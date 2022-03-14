@@ -1,16 +1,13 @@
-
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import '../../../assests/css/all.mov.css'
 import axios from "axios";
-import OwlCarousel from 'react-owl-carousel-loop';
 import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 import { NewOwl } from '../../NewOwl/NewOwl';
-import { Link } from 'react-router-dom';
 
-const HouseHorror = () => {
+const Categories = () => {
 
     const responsive= {
         0: {
@@ -21,24 +18,22 @@ const HouseHorror = () => {
         },
         1000: {
             items: 9
+            
         }
-
     }
 
-
     const [basedCom, setbasedCom] = useState([]);
-    const [title, setTitle] = useState('');
     useEffect(() => {
         async function getAllStudData() {
             try {
                 const basedComic = await axios.get('http://localhost:8000/titles')
-                
-                const requiredData = basedComic.data.find(({ title }) =>
-                    title === 'House of Horror'
+                       
+                const requiredData = basedComic.data.filter(({ title }) =>
+                    title !== 'Hero Banner'
                 )
-                setTitle(requiredData.title)
-                setbasedCom(requiredData.layoutTitles.titles)
-              
+                console.log(requiredData)
+                setbasedCom(requiredData) 
+
             } catch (error) {
                 console.log(error)
             }
@@ -50,11 +45,13 @@ const HouseHorror = () => {
         <>
           <div className='owl-main'>
             <div className='MovieCard-Data'>
-            {title && <h2>{title}</h2>}
-            {basedCom.length!==0 && <NewOwl Banner={basedCom} items="9" responsive={responsive} className="owl-theme basedComic"/>}
+            {basedCom && basedCom.map ((item, index) => {
+                    return (
+                    <NewOwl  data={item.layoutTitles.titles} title={item.title} responsive={responsive}/> 
+                )})}
             </div>
             </div>
         </>
     )
 }
-export default HouseHorror
+export default Categories
