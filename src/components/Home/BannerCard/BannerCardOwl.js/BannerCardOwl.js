@@ -1,15 +1,16 @@
+
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel-loop';
 import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'owl.carousel/dist/assets/owl.theme.default.min.css'
+import '../../../../assests/css/all.mov.css';
 import { Link } from 'react-router-dom';
-import '../../assests/css/all.mov.css';
 
-export const NewOwl=(props)=>{
+const BannerCardOwl = (props)=>{
+
     return(
-        <div className='owl-main'>
-                      <div className='MovieCard-Data'>
-                        <h2>{props.title}</h2>
+        <>
+         <div className='owl-main'>
                     <OwlCarousel
                         className={props.className}
                         items={props.items}
@@ -24,7 +25,7 @@ export const NewOwl=(props)=>{
                     >
                         <>
                             {
-                             props.data.map((BanImg, Value) =>  
+                            props.Banner.map((BanImg, Value) =>  
                                         <Link to='/' key={Value}>
                                             <div className='overlysAll'>
                                             <div className='item'>
@@ -36,7 +37,9 @@ export const NewOwl=(props)=>{
                             }
                         </>
                     </OwlCarousel>
-                    </div>
                 </div>
+        </>
     )
+
 }
+export default BannerCardOwl

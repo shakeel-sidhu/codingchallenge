@@ -17,27 +17,27 @@ const Footer = () => {
                      <div className={styles.FootMenu}>
                         <ul>
                            <li className={styles.liAF}>
-                              <Link to='/whystarz'>
+                              <Link to='/'>
                                  Why STARZ PLAY BY CINEPAX?
                               </Link>
                            </li>
                            <li className={styles.liAF}>
-                              <Link to='/helpcenter'>
+                              <Link to='/'>
                                  Help Center
                               </Link>
                            </li>
                            <li className={styles.liAF}>
-                              <Link to='/contactus'>
+                              <Link to='/'>
                                  Company
                               </Link>
                            </li>
                            <li className={styles.liAF}>
-                              <Link to='/term&Conditions'>
+                              <Link to='/'>
                                  Terms & Conditions
                               </Link>
                            </li>
                            <li>
-                              <Link to='/privacypolicy'>
+                              <Link to='/'>
                                  Privacy Policy
                               </Link>
                            </li>
@@ -48,32 +48,32 @@ const Footer = () => {
                      </div>
                      <div className={styles.FooterLinks}>
                         <div className={styles.footIcon}>
-                           <Link to="/facebook">
+                           <Link to="/">
                            <FontAwesomeIcon icon={faFacebookF} />
                            </Link>
                         </div>
                         <div className={styles.footIcon}>
-                        <Link to="/twiter">
+                        <Link to="/">
                            <FontAwesomeIcon icon={faTwitter} />
                            </Link>
                         </div>
                         <div className={styles.footIcon}>
-                        <Link to="/instagram">
+                        <Link to="/">
                            <FontAwesomeIcon icon={faInstagram} />
                            </Link>
                         </div>
                         <div className={styles.footIcon}>
-                        <Link to="/youtube">
+                        <Link to="/">
                            <FontAwesomeIcon icon={faYoutube} />
                            </Link>
                         </div>
                         <div className={styles.footImg}>
-                        <Link to="/appstore">
+                        <Link to="/">
                         <img src={'https://cp-img-prod-ssl.akamaized.net/prd-peg-data/default/images/store-apple.svg'} />
                         </Link>
                         </div>
                         <div className={styles.footImg}>
-                        <Link to="/playstore">
+                        <Link to="/">
                         <img src={'	https://cp-img-prod-ssl.akamaized.net/prd-peg-data/default/images/store-googleplay.svg'} />
                         </Link>
                         </div>
