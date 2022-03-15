@@ -37,7 +37,6 @@ const BannerCard = () => {
     return (
         <>
             <div>
-           
                {Banner.length!==0 && <BannerCardOwl Banner={Banner} items="2" responsive={responsive} className='owl-theme Banner-Nv'/>}
             </div>
         </>

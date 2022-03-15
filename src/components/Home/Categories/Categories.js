@@ -26,12 +26,10 @@ const Categories = () => {
     useEffect(() => {
         async function getAllStudData() {
             try {
-                const basedComic = await axios.get('http://localhost:8000/titles')
-                       
+                const basedComic = await axios.get('http://localhost:8000/titles')  
                 const requiredData = basedComic.data.filter(({ title }) =>
                     title !== 'Hero Banner'
                 )
-                console.log(requiredData)
                 setbasedCom(requiredData) 
 
             } catch (error) {
@@ -43,14 +41,14 @@ const Categories = () => {
 
     return (
         <>
-          <div className='owl-main'>
+  
             <div className='MovieCard-Data'>
             {basedCom && basedCom.map ((item, index) => {
                     return (
-                    <NewOwl  data={item.layoutTitles.titles} title={item.title} responsive={responsive}/> 
+                    <NewOwl key={index}  data={item.layoutTitles.titles} title={item.title} responsive={responsive}/> 
                 )})}
             </div>
-            </div>
+            
         </>
     )
 }

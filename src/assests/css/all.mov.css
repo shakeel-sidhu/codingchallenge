@@ -6,7 +6,6 @@
     display: flex;
     justify-content: flex-start;
 }
-
 .basedComic .owl-nav .owl-prev{
     position: absolute;
     bottom: 29px !important;
