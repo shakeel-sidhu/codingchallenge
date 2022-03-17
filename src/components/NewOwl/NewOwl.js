@@ -11,7 +11,7 @@ export const NewOwl=(props)=>{
                       <div className='MovieCard-Data'>
                         <h2>{props.title}</h2>
                     <OwlCarousel
-                        className={props.className}
+                        className='owl-theme basedComic'
                         items={props.items}
                         loop
                         dots=""

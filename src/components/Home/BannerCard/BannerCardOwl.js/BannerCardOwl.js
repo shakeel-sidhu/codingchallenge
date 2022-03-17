@@ -7,7 +7,6 @@ import '../../../../assests/css/all.mov.css';
 import { Link } from 'react-router-dom';
 
 const BannerCardOwl = (props)=>{
-
     return(
         <>
          <div className='owl-main'>
