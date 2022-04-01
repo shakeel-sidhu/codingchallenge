@@ -17,7 +17,7 @@ const Categories = () => {
             items: 6
         },
         1000: {
-            items: 9
+            items: 11
             
         }
     }
