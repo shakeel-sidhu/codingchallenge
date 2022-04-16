@@ -7,6 +7,7 @@ import '../../../../assests/css/all.mov.css';
 import { Link } from 'react-router-dom';
 
 const BannerCardOwl = (props)=>{
+
     return(
         <>
          <div className='owl-main'>
@@ -20,11 +21,11 @@ const BannerCardOwl = (props)=>{
                         margin={7}
                         nav
                         responsive={props.responsive || null}
-                        
+                         
                     >
                         <>
                             {
-                            props.Banner.map((BanImg, Value) =>  
+                            props.data.map((BanImg, Value) =>  
                                         <Link to='/' key={Value}>
                                             <div className='overlysAll'>
                                             <div className='item'>
