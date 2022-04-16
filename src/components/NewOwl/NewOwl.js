@@ -22,7 +22,7 @@ export const NewOwl=(props)=>{
                         responsive={props.responsive || null}
                         
                     >
-                        <>
+                        <> 
                             {
                              props.data.map((BanImg, Value) =>  
                                         <Link to='/' key={Value}>
